@@ -1,0 +1,10 @@
+.bss {
+    /*/background-color: #3c096c;/*/
+    /* background-color:  #2ba1d0; */
+    /* background-color: #d90429; */
+    /* background-image: linear-gradient( rgba(229, 152, 155, 1), rgba(193, 18, 31 ,1));} */
+    background: linear-gradient( hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+    /* background: linear-gradient( hsla(16, 100%, 76%, 1) 0%, hsla(49, 100%, 81%, 1) 100%); */
+    /* background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%); */
+    /* background: linear-gradient(hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%); */
+}

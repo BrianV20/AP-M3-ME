@@ -1,0 +1,373 @@
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand h3" id="title">Argentina Programa</a>
+        <ul class="navbar-nav">
+            <li>
+                <a href="https://www.facebook.com/BrianVelazquez72/"><i
+                        class="bi bi-facebook text-light mx-3 h4"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="bi bi-instagram text-light mx-3 h4"></i></a>
+            </li>
+            <li>
+                <a routerLink="" routerLinkActive="active" 
+                    ariaCurrentWhenActive="page"><i id="login" 
+                    class="fa-solid fa-right-to-bracket text-light fa-xl icon px-3"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+<div class="container">
+    <div>
+        <div class="containerUser">
+            <img class="img-fluid" id="bannerImg" [src]="bannerImgSrc" alt="" />
+            <i class="fa-solid fa-circle fa-3x bannerEditIcon"></i>
+            <i class="fa-solid fa-pen fa-xl bannerEditIcon"></i>
+        </div>
+
+        <div class="row text-center mt-3" id="user-pic-about">
+            <div class="col-md-3">
+                <img [src]="userImgSrc" class="img-fluid rounded-circle" id="userImg" alt="" />
+                <h2 class="userName">Brian Ezequiel Velazquez</h2>
+                <i class="fa-solid fa-pen fa-xl userNameEditIcon"></i>
+            </div>
+            <div class="col-md-1">
+                <i class="fa-solid fa-circle fa-3x userImgEditIcon"></i>
+                <i class="fa-solid fa-pen fa-xl userImgEditIcon"></i>
+
+                <i class="fa-solid fa-circle fa-3x userNameEditIcon"></i>
+                <!-- <i class="fa-solid fa-pen fa-xl userNameEditIcon"></i> -->
+            </div>
+            <div class="col-md-7 about" id="about">
+                <p class="h3 mt-2 py-2 px-1" id="about-me">Acerca de mi</p>
+                <p class="lead mt-3 mb-2 text-start" id="aboutMeText">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea
+                    iure perspiciatis minima nesciunt cupiditate doloremque, totam
+                    eveniet. Quas ab similique at magnam ducimus temporibus? Ullam aperiam
+                    deleniti aut cum id consequuntur exercitationem repudiandae quisquam.
+                </p>
+            </div>
+            <div class="col-md-1">
+                <i class="fa-solid fa-circle fa-3x userAboutEditIcon"></i>
+                <i class="fa-solid fa-pen fa-xl userAboutEditIcon"></i>
+                <!-- <i class="fa-solid fa-xmark fa-3x userAboutEditIcon"></i>
+                <i class="fa-solid fa-circle fa-3x userAboutEditIcon" id="userAboutDeleteCircleIcon"></i> -->
+            </div>
+        </div>
+        <!-- <div class="row text-center mt-3" id="user-pic-about">
+            <div class="col-md-3"></div>
+            <div class="col-md-1">
+                <i class="fa-solid fa-circle fa-3x userNameEditIcon"></i>
+                <i class="fa-solid fa-pen fa-xl userNameEditIcon"></i>
+            </div>
+            <div class="col-md-8"></div>
+        </div> -->
+    </div>
+</div>
+
+
+
+
+
+
+<!-- EXPERIENCE -->
+<div class="experienceDiv">
+    <h2 class="exp">Experiencia</h2>
+    <div class="container-exp px-5 py-3">
+        <div>
+            <img [src]="experience_1" alt="youtube logo" class="experience-education-logo" id="youtubeLogo">
+        </div>
+        <div class="item">
+            <p class="h3 mt-3">Programador frontend en Youtube (2018-2019)</p>
+            <p class="info-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure
+                perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure
+                perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam.
+            </p>
+        </div>
+        <div>
+            <i class="fa-solid fa-circle fa-3x "></i>
+            <i class="fa-solid fa-pen fa-xl expEditPen"></i>
+        </div>
+
+
+        <div>
+            <img [src]="experience_2" alt="letterboxd logo" class="experience-education-logo">
+        </div>
+        <div class="item">
+            <p class="h3 mt-3">Programador backend en Letterboxd (2019-2022)</p>
+            <p class="info-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam.
+            </p>
+        </div>
+        <div>
+            <i class="fa-solid fa-circle fa-3x "></i>
+            <i class="fa-solid fa-pen fa-xl expEditPen"></i>
+        </div>
+
+
+        <div>
+            <img [src]="experience_3" alt="netflix logo" class="experience-education-logo">
+        </div>
+        <div class="item">
+            <p class="h3 mt-3">Programador backend en Netflix (2022-actualidad)</p>
+            <p class="info-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam.
+            </p>
+        </div>
+        <div>
+            <i class="fa-solid fa-circle fa-3x "></i>
+            <i class="fa-solid fa-pen fa-xl expEditPen"></i>
+        </div>
+    </div>
+</div>
+
+
+<!-- EDUCATION -->
+<div class="experienceDiv">
+    <h2 class="exp">Educación</h2>
+    <div class="container-edu px-5 py-3">
+        <div>
+            <img [src]="education_1" alt="UTN logo" class="experience-education-logo" id="utnLogo">
+        </div>
+        <div class="item">
+            <p class="h3 mt-3">Tecnico en Programacion - UTN (2022 - 2023)</p>
+            <p class="info-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure
+                perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure
+                perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam.
+            </p>
+        </div>
+        <div>
+            <i class="fa-solid fa-circle fa-3x "></i>
+            <i class="fa-solid fa-pen fa-xl expEditPen"></i>
+        </div>
+
+        <div>
+            <img [src]="experience_2" alt="letterboxd logo" class="experience-education-logo">
+        </div>
+        <div class="item">
+            <p class="h3 mt-3">Tecnico en Sistemas de computación - UTN (2023)</p>
+            <p class="info-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure perspiciatis minima
+                nesciunt
+                cupiditate doloremque, totam eveniet.
+                Quas ab similique at magnam ducimus temporibus? Ullam aperiam deleniti aut cum id consequuntur
+                exercitationem
+                repudiandae quisquam.
+            </p>
+        </div>
+        <div>
+            <i class="fa-solid fa-circle fa-3x "></i>
+            <i class="fa-solid fa-pen fa-xl expEditPen"></i>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- SKILLS -->
+<div class="skills">
+    <h2 id="skillsTitle">Hard & Soft Skills</h2>
+    <div class="skillsEditIcon">
+        <i class="fa-solid fa-circle fa-3x "></i>
+        <i class="fa-solid fa-pen fa-xl expEditPen"></i>
+    </div>
+
+    <div class="skillsDiv">
+        <div class="hardSkills">
+
+            <h3 id="hardSkillsTitle">Hard Skills</h3>
+
+            <div class="skill">
+                <h5 class="skillName">Angular:</h5>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+            </div>
+
+            <div class="skill">
+                <h5 class="skillName">POO:</h5>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+            </div>
+
+            <div class="skill">
+                <h5 class="skillName">HTML/CSS/JS:</h5>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+            </div>
+        </div>
+
+        <div class="softSkills">
+
+            <h3 id="softSkillsTitle">Soft Skills</h3>
+
+            <div class="skill">
+                <h5 class="skillName">Comunicación:</h5>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+            </div>
+
+            <div class="skill">
+                <h5 class="skillName">Trabajo en equipo:</h5>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+            </div>
+
+            <div class="skill">
+                <h5 class="skillName">Liderazgo:</h5>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+            </div>
+
+            <div class="skill">
+                <h5 class="skillName">Rapidez para resolver problemas técnicos:</h5>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- PROJECTS -->
+<div class="divProjectsParent">
+    <h2 class="divProjectsTitle">
+        Projects
+    </h2>
+    <div class="projectsEditIcon">
+        <i class="fa-solid fa-circle fa-3x "></i>
+        <i class="fa-solid fa-pen fa-xl expEditPen"></i>
+    </div>
+
+    
+    <div class="divProjects">
+        <div class="atm">
+            <h5 class="projectTitle">
+                ATM
+            </h5>
+            <p>
+                Descripcion: Simulador no finalizado de ATM hecho en C#.
+                <br>
+                Fecha: 15/10/22
+                <br>
+                Repositorio: <a href="https://github.com/Peteribi73/ATM">Link</a>
+            </p>
+        </div>
+        <div class="batallaNaval">
+            <h5 class="projectTitle">
+                BATALLA NAVAL
+            </h5>
+            <p>
+                Descripcion: Batalla naval para un jugador hecho en C#.
+                <br>
+                Fecha: 18/11/22
+                <br>
+                Repositorio: <a href="https://github.com/Peteribi73/Batalla-Naval">Link</a>
+            </p>
+        </div>
+        <div class="dbDePersonas">
+            <h5 class="projectTitle">
+                DB DE PERSONAS
+            </h5>
+            <p>
+                Descripcion: Semi CRUD de personas hecho en C#.
+                <br>
+                Fecha: 18/10/22
+                <br>
+                Repositorio: <a href="https://github.com/Peteribi73/DB-de-personas">Link</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="p-4 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead">Copyright © 2022 Brian Velazquez</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-4">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+    </div>
+</footer>

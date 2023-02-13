@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+}
+
+#title {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+#login {
+    margin-top: 1rem;
+}
+
+.fa-facebook {
+    padding-top: 0.7em;
+}
+
+.fa-instagram {
+    padding-top: 0.3em;
+}
+
+.git {
+    padding-top: 0.7em;
+}
+
+.icon, .bi {
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+/*/#user-pic {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 5%;
+}/*/
+
+
+
+
+/*/.container-header {
+    background-color: #212529;
+    color: white;
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 1fr 1fr;
+    height: 4.5rem;
+    margin-top: 0%;
+}
+
+.hdr-item1 {
+    background-color: blanchedalmond;
+}
+.hdr-item2 {
+    background-color: green;
+}
+.hdr-item3 {
+    background-color: pink;
+}
+
+#hdr-title {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.icons {
+    height: 2.4rem;
+    display: inline-block;
+    margin: auto auto;
+}
+
+.containerUser {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 40rem 20rem;
+}
+
+#bannerImg {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    border-radius: 2rem;
+    height: 100%;
+}
+
+#userImg {
+    width: 22%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 100%;
+}/*/

@@ -1,0 +1,166 @@
+/*/ USER /*/
+
+.filler {
+  padding-bottom: 2rem;
+}
+
+.containerUser {
+  /* display: flex; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(src\assets\forest.jpg);
+  margin-top: 5rem;
+  /* padding-top: 2rem; */
+  width: 100%;
+  background-size: cover;
+  margin-left: auto;
+  height: 40em;
+  margin-right: auto;
+  border-radius: 3rem;
+  border: 1px solid black;
+  /* display: flex; */
+  color: #edf2f4;
+}
+
+.containerUser h1, h2, h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.containerUser h3 {
+  padding-top: 4em;
+  font-size: 3rem;
+}
+
+.containerUser h1 {
+  font-size: 4.5rem;
+}
+
+.containerUser h2 {
+  font-size: 3.5rem;
+}
+
+#bannerImg {
+  /* background-image: linear-gradient(
+      red, yellow
+    ), url('/assets/forest.jpg');
+    margin-top: 7rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3rem;
+    border: 1px solid black; */
+}
+
+/* .bannerEditIcon {
+    position: absolute;
+    padding: 10rem 0 0 10rem;
+    color: #212529;
+    left: 66%;
+    top: -3%;
+  } */
+
+/* .fa-pen.bannerEditIcon {
+    color: #edf2f4;
+    top: -0.5%;
+    left: 66.6%;
+  } */
+
+#user-pic-about {
+  padding-top: 1rem;
+}
+
+#userImg {
+  width: 100%;
+  margin-left: 6.1rem;
+  display: inline-block;
+  place-items: center;
+  border: 3px solid black;
+}
+
+/* .userImgEditIcon {
+    position: absolute;
+    color: #212529;
+    margin-left: 0.5em;
+    /* display: flex;
+    justify-content: flex-end; */
+/*} */
+
+/* .fa-pen.userImgEditIcon { 
+    color: #edf2f4;
+    margin-top: 1em;
+    margin-left: 1.5em;
+  } */
+
+.userName {
+  /* background-color: #44626D; */
+  margin: 0.5em 0 0 3.35em;
+  text-shadow: 1px 10px 10px black;
+  display: inline-block;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #edf2f4;
+  /* padding: 1em 3em 1em 1em; */
+  /* padding: 0.5em 0 0 5.7em; */
+}
+
+/* .fa-circle.userNameEditIcon {
+    display: inline-block;
+    margin: 5.5em 0 0 0.4em;
+    color: #212529;
+  } */
+
+/* .fa-pen.userNameEditIcon {
+    color: #edf2f4;
+    position: absolute;
+    margin: 1.55em 0 0 1.85em;
+  } */
+
+#about-me {
+  background-color: #44626D;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  border-radius: 1rem;
+  width: 30%;
+  color: #edf2f4;
+  border: solid 1px black;
+}
+
+#aboutMeText {
+  font-size: 1.5em;
+}
+
+#about {
+  background-color: #C2D3D9;
+  border-radius: 1rem;
+  width: 58.3%;
+  border: solid 1px black;
+  padding: 0.7em 1.7em;
+}
+
+.lead {
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+/* .userAboutEditIcon {
+    background-color: royalblue;
+    /* display: block; */
+/* color: burlywood; */
+/*} */
+
+/* .fa-pen.userAboutEditIcon {
+    position: absolute;
+    margin: 1em 0 0 -1.5em;
+    color: #edf2f4;
+  } */
+
+/* #userAboutDeleteCircleIcon {
+    background-color: #C4C1D9;
+  } */
+
+/* .fa-xmark.userAboutEditIcon {
+    position: absolute;
+    margin: 1em 4em 0.5em 0;
+    color: rosybrown;
+    background-color: #C6EB86;
+  } */

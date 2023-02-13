@@ -1,0 +1,82 @@
+/*/ EXPERIENCIA /*/
+
+.experienceDiv {
+  padding-top: 8rem;
+  max-width: 76%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+}
+
+.exp {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  border: solid 1px black;
+  background-color: #444D6E;
+  color: #edf2f4;
+  padding: 1rem 2rem;
+  margin-left: 4.7rem;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.container-exp {
+  border: solid 1px black;
+  margin: 2rem 5rem -5rem 5rem;
+  border-radius: 1rem;
+  background-color: #C4C1D9;
+
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: repeat(3, 12rem);
+  /* grid-auto-flow: column; */
+  gap: 2.7rem 2rem;
+}
+
+.item {
+  overflow: auto;
+  /* border: 4px solid black ; */
+}
+
+.experience-education-logo {
+  display: grid;
+  margin: auto auto;
+  width: 180px;
+  height: 160px;
+  border-radius: 4rem;
+}
+
+#youtubeLogo {
+  margin-top: 2rem;
+}
+
+.info-text {
+  padding: 8px 20px;
+  font-family: 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+/* .expEditPen {
+  position: absolute;
+  margin: 1em 0 0 -1.5em;
+  color: #edf2f4;
+} */
+
+/*/EDUCACION/*/
+
+.container-edu {
+  border: solid 1px black;
+  margin: 2rem 5rem 1rem 5rem;
+  border-radius: 1rem;
+  background-color: #C4C1D9;
+
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: 12rem 12rem;
+  gap: 2.7rem 2rem;
+}
+
+#utnLogo {
+  margin-top: 2rem;
+}

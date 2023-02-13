@@ -1,0 +1,68 @@
+.divProjectsParent {
+  border: solid 1px black;
+  height: 50%;
+  background-color: #F7C6A8;
+  text-align: center;
+  width: 67.5%;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+  margin: 3rem auto;
+}
+
+.divProjectsTitle {
+  background-color: #e36414;
+  color: #edf2f4;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.divProjects {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 30%;
+  border-radius: 3em;
+}
+
+.atm {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+.atm,
+.batallaNaval,
+.dbDePersonas,
+.paginaBoostrap {
+  background-color: #C6EB86;
+  padding: 0 1rem;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+.projectTitle {
+  background-color: #F19962;
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+}
+
+.divProjects p {
+  font-size: 1.4rem;
+}
