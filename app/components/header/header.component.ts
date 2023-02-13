@@ -29,23 +29,4 @@ export class HeaderComponent implements OnInit {
     console.log(this.loginForm.value);
     // Call Api
   }
-  /* constructor() {
-    loginClick = false;
-  } */
-  /* constructor() {
-
-    var login: HTMLElement | null = document.getElementById('login');
-
-    function Login(): any {
-      // console.log("hola");
-      // TODO
-    }
-
-
-
-
-    if (login != null) {
-      login.onclick = Login();
-    }
-  } */
 }
