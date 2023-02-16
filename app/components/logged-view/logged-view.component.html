@@ -1,19 +1,26 @@
+<!-- H E A D E R -->
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
     <div class="container">
         <a href="#" class="navbar-brand h3" id="title">Argentina Programa</a>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav iconsUl">
             <li>
                 <a href="https://www.facebook.com/BrianVelazquez72/"><i
-                        class="bi bi-facebook text-light mx-3 h4"></i></a>
+                        class="fa-brands fa-facebook text-light fa-xl h4 icon px-3"></i></a>
             </li>
             <li>
-                <a href="#"><i class="bi bi-instagram text-light mx-3 h4"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-light h4 icon px-3"></i></a>
             </li>
             <li>
-                <a routerLink="" routerLinkActive="active" 
-                    ariaCurrentWhenActive="page"><i id="login" 
-                    class="fa-solid fa-right-to-bracket text-light fa-xl icon px-3"></i></a>
+                <a href="https://github.com/BrianV20"><i
+                        class="fa-brands fa-github text-light fa-xl icon git px-3"></i></a>
+            </li>
+            <li>
+                <a><i id="login" class="fa-solid fa-right-to-bracket text-light fa-xl icon px-3" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                    </i>
+                </a>
             </li>
         </ul>
     </div>
@@ -21,53 +28,46 @@
 
 
 
-
-
-<div class="container">
-    <div>
-        <div class="containerUser">
-            <img class="img-fluid" id="bannerImg" [src]="bannerImgSrc" alt="" />
-            <i class="fa-solid fa-circle fa-3x bannerEditIcon"></i>
-            <i class="fa-solid fa-pen fa-xl bannerEditIcon"></i>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="loginForm" (ngSubmit)="loginFormSubmit">
+                    <div class="mb-3">
+                        <label for="id_email" class="form-label">Email address</label>
+                        <input formControlName="email" [class.is-invalid]="emailField.touched && emailField.invalid"
+                            type="email" class="form-control" id="id_email">
+                        <div *ngIf="emailField.touched && emailField.hasError('required')"
+                            class="d-block invalid-feedback">Please
+                            provide a Email.</div>
+                        <div *ngIf="emailField.touched && emailField.hasError('email')"
+                            class="d-block invalid-feedback">Email
+                            address is
+                            not valid</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_Password" class="form-label">Password</label>
+                        <input formControlName="password"
+                            [class.is-invalid]="passwordField.touched && passwordField.invalid" type="password"
+                            class="form-control" id="id_Password" required minlength="5">
+                        <div *ngIf="passwordField.touched && passwordField.hasError('required')"
+                            class="d-block invalid-feedback">
+                            Please
+                            provide a Password.</div>
+                        <div *ngIf="passwordField.touched && passwordField.hasError('minlength')"
+                            class="d-block invalid-feedback">
+                            Name must be at least 4 characters long.</div>
+                    </div>
+                    <button [disabled]="loginForm.invalid" type="submit" class=" mt-3 btn btn-primary w-100"
+                        id="submitBtn" routerLink="/LoggedView">Submit</button>
+                </form>
+            </div>
         </div>
-
-        <div class="row text-center mt-3" id="user-pic-about">
-            <div class="col-md-3">
-                <img [src]="userImgSrc" class="img-fluid rounded-circle" id="userImg" alt="" />
-                <h2 class="userName">Brian Ezequiel Velazquez</h2>
-                <i class="fa-solid fa-pen fa-xl userNameEditIcon"></i>
-            </div>
-            <div class="col-md-1">
-                <i class="fa-solid fa-circle fa-3x userImgEditIcon"></i>
-                <i class="fa-solid fa-pen fa-xl userImgEditIcon"></i>
-
-                <i class="fa-solid fa-circle fa-3x userNameEditIcon"></i>
-                <!-- <i class="fa-solid fa-pen fa-xl userNameEditIcon"></i> -->
-            </div>
-            <div class="col-md-7 about" id="about">
-                <p class="h3 mt-2 py-2 px-1" id="about-me">Acerca de mi</p>
-                <p class="lead mt-3 mb-2 text-start" id="aboutMeText">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea
-                    iure perspiciatis minima nesciunt cupiditate doloremque, totam
-                    eveniet. Quas ab similique at magnam ducimus temporibus? Ullam aperiam
-                    deleniti aut cum id consequuntur exercitationem repudiandae quisquam.
-                </p>
-            </div>
-            <div class="col-md-1">
-                <i class="fa-solid fa-circle fa-3x userAboutEditIcon"></i>
-                <i class="fa-solid fa-pen fa-xl userAboutEditIcon"></i>
-                <!-- <i class="fa-solid fa-xmark fa-3x userAboutEditIcon"></i>
-                <i class="fa-solid fa-circle fa-3x userAboutEditIcon" id="userAboutDeleteCircleIcon"></i> -->
-            </div>
-        </div>
-        <!-- <div class="row text-center mt-3" id="user-pic-about">
-            <div class="col-md-3"></div>
-            <div class="col-md-1">
-                <i class="fa-solid fa-circle fa-3x userNameEditIcon"></i>
-                <i class="fa-solid fa-pen fa-xl userNameEditIcon"></i>
-            </div>
-            <div class="col-md-8"></div>
-        </div> -->
     </div>
 </div>
 
@@ -75,6 +75,42 @@
 
 
 
+                            <!-- U S E R  I N F O-->
+
+<div class="container">
+    <div>
+        <div class="filler"></div>
+        <div class="containerUser">
+            <h3>Hola, soy</h3>
+            <h1>Brian Ezequiel Velázquez</h1>
+            <h2>Desarrollador Full Stack Jr.</h2>
+        </div>
+
+        <div class="row text-center mt-3" id="user-pic-about">
+            <div class="col-md-3">
+                <img src='assets\profile-pic.jpeg' class="img-fluid rounded-circle" id="userImg" alt="" />
+                <h2 class="userName">Brian Ezequiel Velazquez</h2>
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-8 about" id="about">
+                <p class="h3 mt-2 py-2 px-1" id="about-me">Acerca de mi</p>
+                <p class="lead mt-3 mb-2 text-start" id="aboutMeText">
+                    Estudiante de 19 años de la carrera "Tecnicatura Universitaria en Programación" de la UTN. <br> <br>
+                    Dispongo de un conocimiento básico de C#, Typescript, <br> el FrontEnd (HTML, CSS, JavaScript) asi
+                    tambien como de algunos frameworks de estos (Angular, Bootstrap). <br> <br> Aspiro sobre todo a
+                    profundizar mi
+                    conocimiento sobre el BackEnd <br> y a formar parte de una empresa de renombre.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+                                            <!-- E X P  A N D  E D U -->
 
 <!-- EXPERIENCE -->
 <div class="experienceDiv">
@@ -106,10 +142,10 @@
                 repudiandae quisquam.
             </p>
         </div>
-        <div>
+        <!-- <div>
             <i class="fa-solid fa-circle fa-3x "></i>
             <i class="fa-solid fa-pen fa-xl expEditPen"></i>
-        </div>
+        </div> -->
 
 
         <div>
@@ -126,17 +162,17 @@
                 repudiandae quisquam.
             </p>
         </div>
-        <div>
+        <!-- <div>
             <i class="fa-solid fa-circle fa-3x "></i>
             <i class="fa-solid fa-pen fa-xl expEditPen"></i>
-        </div>
+        </div> -->
 
 
         <div>
             <img [src]="experience_3" alt="netflix logo" class="experience-education-logo">
         </div>
         <div class="item">
-            <p class="h3 mt-3">Programador backend en Netflix (2022-actualidad)</p>
+            <p class="h3 mt-3">Programador backend en Facebook (2022-actualidad)</p>
             <p class="info-text">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ea iure perspiciatis minima
                 nesciunt
@@ -146,10 +182,10 @@
                 repudiandae quisquam.
             </p>
         </div>
-        <div>
+        <!-- <div>
             <i class="fa-solid fa-circle fa-3x "></i>
             <i class="fa-solid fa-pen fa-xl expEditPen"></i>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -184,13 +220,13 @@
                 repudiandae quisquam.
             </p>
         </div>
-        <div>
+        <!-- <div>
             <i class="fa-solid fa-circle fa-3x "></i>
             <i class="fa-solid fa-pen fa-xl expEditPen"></i>
-        </div>
+        </div> -->
 
         <div>
-            <img [src]="experience_2" alt="letterboxd logo" class="experience-education-logo">
+            <img [src]="education_1" alt="utn logo" class="experience-education-logo">
         </div>
         <div class="item">
             <p class="h3 mt-3">Tecnico en Sistemas de computación - UTN (2023)</p>
@@ -203,27 +239,25 @@
                 repudiandae quisquam.
             </p>
         </div>
-        <div>
+        <!-- <div>
             <i class="fa-solid fa-circle fa-3x "></i>
             <i class="fa-solid fa-pen fa-xl expEditPen"></i>
-        </div>
+        </div> -->
 
     </div>
 </div>
 
 
 
-
-
-
+                                                <!-- S K I L L S -->
 
 <!-- SKILLS -->
 <div class="skills">
     <h2 id="skillsTitle">Hard & Soft Skills</h2>
-    <div class="skillsEditIcon">
+    <!-- <div class="skillsEditIcon">
         <i class="fa-solid fa-circle fa-3x "></i>
         <i class="fa-solid fa-pen fa-xl expEditPen"></i>
-    </div>
+    </div> -->
 
     <div class="skillsDiv">
         <div class="hardSkills">
@@ -306,68 +340,65 @@
 
 
 
-<!-- PROJECTS -->
+                                        <!-- PROJECTS -->
+
 <div class="divProjectsParent">
     <h2 class="divProjectsTitle">
-        Projects
+        Proyectos
     </h2>
-    <div class="projectsEditIcon">
-        <i class="fa-solid fa-circle fa-3x "></i>
-        <i class="fa-solid fa-pen fa-xl expEditPen"></i>
-    </div>
 
     
     <div class="divProjects">
-        <div class="atm">
-            <h5 class="projectTitle">
-                ATM
-            </h5>
-            <p>
-                Descripcion: Simulador no finalizado de ATM hecho en C#.
-                <br>
-                Fecha: 15/10/22
-                <br>
-                Repositorio: <a href="https://github.com/Peteribi73/ATM">Link</a>
-            </p>
+        <div class="card">
+            <img src="assets/ATM1.png" alt="card Image" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">ATM</h3>
+                <p class="card-text">Simulador no finalizado de ATM hecho en C#.
+                    <br>
+                    Fecha: 15/10/22
+                    <br><br><br><br><br>
+                <a href="https://github.com/Peteribi73/ATM" class="btn btn-primary">Repositorio</a>
+            </div>
         </div>
-        <div class="batallaNaval">
-            <h5 class="projectTitle">
-                BATALLA NAVAL
-            </h5>
-            <p>
-                Descripcion: Batalla naval para un jugador hecho en C#.
-                <br>
-                Fecha: 18/11/22
-                <br>
-                Repositorio: <a href="https://github.com/Peteribi73/Batalla-Naval">Link</a>
-            </p>
+
+        <div class="card">
+            <img src="assets/PaginaBootstrap.png" alt="card Image" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">Pagina de Bootstrap</h3>
+                <p class="card-text">Pagina web hecha casi enteramente con el framework Bootstrap.
+                    <br>
+                    Fecha: 29/11/12
+                    <br><br>
+                <a href="https://github.com/Peteribi73/Pagina-con-Bootstrap" class="btn btn-primary">Repositorio</a>
+            </div>
         </div>
-        <div class="dbDePersonas">
-            <h5 class="projectTitle">
-                DB DE PERSONAS
-            </h5>
-            <p>
-                Descripcion: Semi CRUD de personas hecho en C#.
-                <br>
-                Fecha: 18/10/22
-                <br>
-                Repositorio: <a href="https://github.com/Peteribi73/DB-de-personas">Link</a>
-            </p>
+
+        <div class="card">
+            <img src="assets/BatallaNaval.png" alt="card Image" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">Batalla Naval</h3>
+                <p class="card-text">Batalla naval para un jugador hecho en C#.
+                    <br>
+                    Fecha: 18/11/22
+                    <br><br><br><br>
+                <a href="https://github.com/Peteribi73/Batalla-Naval" class="btn btn-primary">Repositorio</a>
+            </div>
         </div>
     </div>
 </div>
 
 
 
+                                          <!-- FOOTER -->
 
 
-
-<!-- FOOTER -->
-<footer class="p-4 bg-dark text-white text-center position-relative">
-    <div class="container">
-        <p class="lead">Copyright © 2022 Brian Velazquez</p>
-        <a href="#" class="position-absolute bottom-0 end-0 p-4">
-            <i class="bi bi-arrow-up-circle h1"></i>
-        </a>
-    </div>
-</footer>
+<body>
+    <footer class="p-4 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright © 2022 Brian Velazquez</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-4">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+     </footer>
+</body>

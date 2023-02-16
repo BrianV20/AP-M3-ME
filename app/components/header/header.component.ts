@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,15 +9,21 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 
 export class HeaderComponent implements OnInit {
-  loginClick = false;
-
-  title = 'bootstrap-popup';
   loginForm!: FormGroup;
-  constructor() { }
+  constructor(private router: Router) { 
+      /* submitBtn?.addEventListener("click", function() {
+        router.navigateByUrl('/LoggedView');
+      }, false); */
+  }
+  /* submitBtn = document.getElementById('submitBtn');
+  loginFunction() {
+    this.router.navigateByUrl('/LoggedView');
+  } */
+
   ngOnInit(): void {
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', [Validators.required])
+      password: new FormControl('', [Validators.required,  Validators.minLength(5)],)
     })
   }
   get emailField(): any {
@@ -26,7 +33,8 @@ export class HeaderComponent implements OnInit {
     return this.loginForm.get('password');
   }
   loginFormSubmit(): void {
-    console.log(this.loginForm.value);
+    console.log(this.loginForm.value)
+    console.log("llamada a loginFormSubmit");
     // Call Api
   }
 }

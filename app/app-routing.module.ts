@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, NavigationEnd } from '@angular/router';
+import { RouterModule, Routes, Router, NavigationEnd } from '@angular/router';
 import { ExpAndEduComponent } from './components/exp-and-edu/exp-and-edu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
