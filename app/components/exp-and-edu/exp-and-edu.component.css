@@ -1,11 +1,29 @@
 /*/ EXPERIENCIA /*/
 
 .experienceDiv {
-  padding-top: 8rem;
+  padding-top: 3em; /*/ 16em CHECK /*/
   max-width: 76%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2rem;
+}
+
+.editIcon {
+  transition: transform 0.3s;
+  cursor: pointer;
+  /* display: inline-block !important; */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.editIcon:hover {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.fa-pen {
+  margin-top: -1.5em;
 }
 
 .exp {
@@ -18,6 +36,7 @@
   margin-left: 4.7rem;
   width: fit-content;
   border-radius: 5px;
+  margin-top: 2em;
 }
 
 .container-exp {
@@ -67,7 +86,7 @@
 
 .container-edu {
   border: solid 1px black;
-  margin: 2rem 5rem 1rem 5rem;
+  margin: 2rem 5rem 5rem 5rem;
   border-radius: 1rem;
   background-color: #C4C1D9;
 

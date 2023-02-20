@@ -9,6 +9,22 @@
   margin: 3rem auto;
 }
 
+.editIcon {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.editIcon:hover {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.fa-pen {
+  margin-top: -1.5em;
+  margin-bottom: 1em;
+}
+
 .divProjectsTitle {
   background-color: #e36414;
   color: #edf2f4;

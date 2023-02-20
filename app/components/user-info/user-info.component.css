@@ -8,13 +8,11 @@
   /* display: flex; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(src\assets\forest.jpg);
-  margin-top: 5rem;
   /* padding-top: 2rem; */
   width: 100%;
   background-size: cover;
-  margin-left: auto;
   height: 40em;
-  margin-right: auto;
+  margin: 5rem auto 0 auto;
   border-radius: 3rem;
   border: 1px solid black;
   /* display: flex; */
@@ -27,7 +25,7 @@
 }
 
 .containerUser h3 {
-  padding-top: 4em;
+  padding-top: 4em; /*/ 2.5em CHECK /*/
   font-size: 3rem;
 }
 
@@ -38,6 +36,65 @@
 .containerUser h2 {
   font-size: 3.5rem;
 }
+
+.editIcon {
+  /* background-color: greenyellow; */
+  width: fit-content;
+  margin-top: 2rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.circle1 {
+  margin-left: 18em;
+}
+
+.pen1 {
+  margin-left: 36.5em;
+  position: relative;
+}
+
+/* .icons {
+  transition: transform 0.3s;
+  width: 10%;
+  margin-right: 0;
+}
+
+.icons:hover {
+  transform: translateY(-12px);
+} */
+
+.editIcon:hover {
+  /* transform:scale(1.3, 1.3); */
+  /* transform: translateY(-10px); */
+}
+
+.fa-pen {
+  padding: 0 0.9rem 0 0;
+  margin-top: -3rem;
+}
+
+
+.circle2 {
+  margin-left: 5.5em;
+  margin-top: -9em;
+}
+
+.pen2 {
+  margin-left: 11.5em;
+  position: relative;
+}
+
+.circle3 {
+  margin-top: -1em;
+  margin-left: 10em;
+}
+
+.pen3 {
+  margin-top: -1.5em;
+  margin-left: 20.5em;
+}
+
 
 #bannerImg {
   /* background-image: linear-gradient(

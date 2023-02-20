@@ -7,6 +7,24 @@
   background-color: #B6D1C6;
   padding: 1rem 0.5rem;
   border-radius: 1rem;
+  margin-bottom: 6em;
+}
+
+.editIcon {
+  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.editIcon:hover {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.fa-pen {
+  margin-top: -1.5em;
+  margin-bottom: 1em;
 }
 
 #skillsTitle {
